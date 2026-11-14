@@ -61,7 +61,7 @@ a {
 
 
 /* Первый блок ОНО тебе ндо */
-.cover{
+.cover {
   position: relative;
   min-height: 757px;
   background: url("../images/cover.jpg") no-repeat center;
