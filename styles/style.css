@@ -1,1 +1,292 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+}
+
+.header__logo img {
+  display: block;
+  width: 148px;
+}
+
+body {
+  font-size: 18px;
+  background: #FFF;
+}
+
+.header_menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12.48px;
+}
+
+.header_menu-list {
+  display: flex;
+  gap: 13px;
+  list-style: none;
+}
+
+.header_menu-circle {
+  width: 6px;
+  height: 6px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+
+.address {
+  /* Общее оформление контактов в шапке и подвале */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.header__address {
+  /* Расположение контактов только в шапке */
+  max-width: 240px;
+  justify-self: end;
+}
+
+.link-current {
+  text-decoration: none;
+}
+
+a {
+  /* Общие настройки ссылок */
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
+}
+
+
+/* Первый блок ОНО тебе ндо */
+.cover{
+  position: relative;
+  min-height: 757px;
+  background: url("../images/cover.jpg") no-repeat center;
+  background-size: cover;
+  padding: 165px 50px 50px;
+  color: #FFF;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.aligned-text {
+  text-align: left;
+}
+
+.aligned-text-center {
+  text-align: center;
+}
+
+.aligned-text-right {
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid #FFF;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+  color: inherit;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.6;
+}
+/* Первый блок ОНО тебе ндо закончился */
+
+
+/* Второй блок ЛОТЫ начало 😎*/
+.lots {
+  width: 1052px;
+  min-height: 723px;
+  margin: 180px 24px 0;
+}
+
+.lots__title {
+  margin: 0px 0px 27px 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  list-style: none;
+  
+}
+
+.lots__card {
+  width: 334px;
+}
+
+.card-content {
+  min-height: 596px;
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.picture {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: auto;
+}
+
+.card__title,
+.card__text {
+  z-index: 1;
+}
+
+.lots__see-more-link {
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+}
+/* Второй блок ЛОТЫ конец 😎*/
+
+
+/* Третий  блок ОБ АУКЦИОНЕ начало */
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+  margin: 120px 24px 0;
+}
+
+.about__container-logo {
+  justify-self: center;
+  padding-top: 35px;
+}
+
+.about__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.about__logo-column {
+  display: block;
+  width: 148px;
+}
+
+.about__container-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 133px;
+}
+
+.about__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.about__description-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+/* Третий  блок ОБ АУКЦИОНЕ конец */
+
+
+/* подвал начало */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 180px;
+  padding: 0 50px 82px;
+}
+
+.footer__address {
+  max-width: 264px;
+}
+
+.footer_menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__socials {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__social-icon {
+  display: block;
+  width: 48px;
+}
+/* подвал конец */
