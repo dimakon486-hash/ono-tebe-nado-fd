@@ -94,7 +94,11 @@ a {
   text-align: right;
 }
 
-.cover__description {
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.description {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,11 +111,13 @@ a {
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  word-spacing: 18.5px;
 }
 
 .button {
   width: 256px;
-  height: 51px;
+  min-height: 51px;
+  padding: 11px 31px;
   border: 1px solid #FFF;
   font-size: 22px;
   text-transform: uppercase;
@@ -146,15 +152,14 @@ a {
   gap: 25px;
   flex-wrap: wrap;
   list-style: none;
-  
 }
 
 .lots__card {
   width: 334px;
+  min-height: 596px;
 }
 
 .card-content {
-  min-height: 596px;
   background-size: cover;
   background-position: center;
   color: #FFF;
